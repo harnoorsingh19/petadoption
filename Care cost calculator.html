@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Style2.css">
+        <body>
+            <section id="image">
+        <img src="C:\Users\Harnoor\Desktop/Pet_Logo.jpg" alt="Logo" align="left"  height="60" width="180"><br><br><br><br></section>
+            <script src="script.js"></script>
+            <section id="buttons">
+                <a href="Pet Adoption Website by Harnoor Singh.html"><button class="button1" type="button">Home</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Care cost calculator.html"><button class="button2" type="button" >Care Cost Calculator</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Adoption enquiry form.html"><button class="button3" type="button">Adoption Inquiry</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="contact us.html"><button class="button4" type="button">Contact Us</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </section><br>
+                <section id="calculator">
+                    <h2 id="text">CARE COST CALCULATOR</h2><br>
+                    <form id="costCalculator">
+                        
+                        <select id="petType" name="petType">
+                            <option value="" disabled selected>Select Pet Type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="bird">Bird</option>
+                        </select>
+                        <select id="careDuration">
+                            <option value="" disabled selected>Months</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <button id="button" type="button" onclick="calculateCost()">Calculate Cost</button>
+                    </form>
+                    <p id="costResult"></p>
+                </section>
+        </body>
+    </head>
+</html>
+    

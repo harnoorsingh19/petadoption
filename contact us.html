@@ -1,0 +1,201 @@
+<html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            text-align: center;
+            display: flex;
+            justify-content: center; 
+            align-items: center;  
+            background-image: url("contact_us_bg2.jpg");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+        #contact
+        {
+        font-size: 30px;
+        background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet); 
+        background-size: 400%; 
+        animation: animateColor 5s ease-in-out infinite;
+        -webkit-background-clip:text;
+        color:transparent;
+        }
+        @keyframes animateColor { 
+            0% { background-position: 0% 50%; } 
+            50% { background-position: 100% 50%; } 
+            100% { background-position: 0% 50%; }
+        }
+        #image
+        {
+            position: absolute; /* Positioning the button */
+           top: -1px;   /* 10px from the top */
+           left: 10px;
+           padding: 15px;
+           border-radius: 10px;
+        }
+#buttons
+  {
+   position: absolute; /* Positioning the button */
+   top: -1px;   /* 10px from the top */
+   right: 10px;
+   padding: 15px;
+   border-radius: 10px;
+  }
+.button1
+  {
+    color: white;
+    background-color: red;
+    border: transparent;
+    border-radius: 30px;
+    padding: 11px 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
+  }
+  
+  .button2
+  {
+    color: white;
+    background-color:rgb(2, 193, 2);
+    border: transparent;
+    border-radius: 20px;
+    padding: 11px 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  .button3
+  {
+    color: white;
+    background-color:rgb(77, 77, 255);
+    border: transparent;
+    border-radius: 20px;
+    padding: 11px 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  .button4
+  {
+    color: white;
+    background-color:orange;
+    border: transparent;
+    border-radius: 20px;
+    padding: 11px 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section id="image">
+        <img src="C:\Users\Harnoor\Desktop/Pet_Logo.jpg" alt="Logo" align="left"  height="60" width="180"><br><br><br><br></section>
+            <section id="buttons">
+                <a href="Pet Adoption Website by Harnoor Singh.html"><button class="button1" type="button">Home</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Care cost calculator.html"><button class="button2" type="button" >Care Cost Calculator</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Adoption enquiry form.html"><button class="button3" type="button">Adoption Inquiry</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="contact us.html"><button class="button4" type="button">Contact Us</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                </section><br>
+    <div class="contact-form">
+        <h2 id="contact">Contact Us</h2>
+        <form action="your-server-endpoint" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

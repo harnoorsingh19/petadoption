@@ -1,0 +1,174 @@
+body
+{
+   text-align: center;
+   display: flex;
+   justify-content: center; 
+   align-items: center;  
+   background-image: url("BG_image.jpg");
+   background-size: cover; 
+   background-position: center; 
+   background-repeat: no-repeat;  
+}
+#image
+{
+   position: absolute; /* Positioning the button */
+   top: -1px;   /* 10px from the top */
+   left: 10px;
+   padding: 15px;
+   border-radius: 10px;
+}
+#petType
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border:transparent;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 10px 40px;
+    box-shadow: 0 4px 10px rgba(128, 128, 128, 0.9);
+    background-color: rgba(255, 255, 255, 0.6);
+    
+  }
+  #careDuration
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border:transparent;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 10px 40px;
+    box-shadow: 0 4px 10px rgba(128, 128, 128, 0.9);
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  #costResult
+  {
+    color: black;
+    font-weight: bold;
+    background-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+    
+  }
+  @keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+}
+#buttons
+  {
+   position: absolute; /* Positioning the button */
+   top: -1px;   /* 10px from the top */
+   right: 10px;
+   padding: 15px;
+   border-radius: 10px;
+  }
+.button1
+  {
+    color: white;
+    background-color: red;
+    border: transparent;
+    border-radius: 30px;
+    padding: 11px 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
+  }
+  
+  .button2
+  {
+    color: white;
+    background-color:rgb(2, 193, 2);
+    border: transparent;
+    border-radius: 20px;
+    padding: 11px 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  .button3
+  {
+    color: white;
+    background-color:rgb(77, 77, 255);
+    border: transparent;
+    border-radius: 20px;
+    padding: 11px 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  .button4
+  {
+    color: white;
+    background-color:orange;
+    border: transparent;
+    border-radius: 20px;
+    padding: 11px 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+#calculator
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    background-color: rgba(234, 234, 234, 0.5);
+    border-radius: 20px;
+    padding: 40px 100px;
+    
+}
+#petType{
+    font-size: 15px;
+}
+#button
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    background-color:rgb(58, 58, 255);
+    border: transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff2600, #ff003c); /* Initial gradient */
+    background-size: 500% 500%; /* For smoother transitions */
+    animation: multiColorChange 2s ease-in-out infinite; /* Animation settings */
+    transition: transform 0.3s ease; /* For hover effect */
+}
+@keyframes multiColorChange {
+    0% { background: linear-gradient(45deg, #ff4b2b, #ff416c); }
+      10% { background: linear-gradient(45deg, #ff416c, #ffc837); }
+      20% { background: linear-gradient(45deg, #ffc837, #32a852); }
+      30% { background: linear-gradient(45deg, #32a852, #36d1dc); }
+      40% { background: linear-gradient(45deg, #36d1dc, #ff4b2b); }
+      50% { background: linear-gradient(45deg, #ff4b2b, #ff416c); }
+      60% { background: linear-gradient(45deg, #ff416c, #ffc837); }
+      70% { background: linear-gradient(45deg, #ffc837, #32a852); }
+      80% { background: linear-gradient(45deg, #32a852, #36d1dc); }
+      90% { background: linear-gradient(45deg, #36d1dc, #ff4b2b); }
+      100% { background: linear-gradient(45deg, #ff4b2b, #ff416c); }
+  }
+#text
+{
+    font-size: 30px;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet); 
+    background-size: 400%; 
+    animation: animateColor 5s ease-in-out infinite;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+@keyframes animateColor { 
+    0% { background-position: 0% 50%; } 
+    50% { background-position: 100% 50%; } 
+    100% { background-position: 0% 50%; }
+}
